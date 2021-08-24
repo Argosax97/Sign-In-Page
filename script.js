@@ -30,39 +30,6 @@ SignUp.addEventListener("click", () => {
     const signup_pagae = document.querySelector(".signup_pagae")
     signup_pagae.style.display = "flex"
 })
-// SignUp.addEventListener("click", () => {
-//     const SignUpPagae = document.createElement("div");
-//     SignUpPagae.classList.add("signup_pagae");
-//     SignUpPagae.innerHTML = `
-//     <div class="sign_container">
-//     <div class="signup_title">
-//         <h1>Sign in</h1>
-//     </div>
-//     <div class="forms">
-//         <form class="fName">
-//             <span>First Name</span>
-//             <input type="text" placeholder="Enter your first name">
-//         </form>
-//         <form class="lName">
-//             <span>Email Address</span>
-//             <input  type="text" placeholder="Enter your last name">
-//         </form>
-//         <form class="email_form">
-//             <span>Email Address</span>
-//             <input id="email" type="email" placeholder="Enter your email">
-//         </form>
-//         <form class="password_form">
-//             <div class="password_text">
-//                 <span>Password</span>
-//                 <span id="random">Get random password?</span>
-//             </div>
-//             <input id="password" type="password" placeholder="Enter your password">
-//         </form>
-//     </div>
-//     <button type="submit" class="sign_in"><span>Sign In</span></button>
-// </div>`
-// document.body.append(SignUpPagae);
-// });
 
 const RandPasBtn = document.querySelector(".random");
 RandPasBtn.addEventListener("click", () => {
