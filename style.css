@@ -1,92 +1,101 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #14163E;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.title{
+
+.title {
     color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
     margin: 100px 0 50px 0;
 }
-.personal_team_btns{
+
+.personal_team_btns {
     padding-bottom: 20px;
 }
-.personal_btn,.team_btn{
+
+.personal_btn, .team_btn {
     background-color: #26295c;
     padding: 5px 10px;
     font-size: 1.2em;
     width: 175px;
     border: none;
     color: rgba(255, 255, 255, 0.8);
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
-.personal_btn{
+
+.personal_btn {
     border-radius: 5px 0 0 5px;
 }
-.team_btn{
+
+.team_btn {
     border-radius: 0 5px 5px 0;
 }
 
-.personal_btn span:hover,.team_btn span:hover{
+.personal_btn span:hover, .team_btn span:hover {
     color: #F03B7A;
     cursor: pointer;
     transition: 0.3s;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: rgba(255, 255, 255, 0.8);
-    font-family:sans-serif;
+    color: rgba(255, 255, 255);
+    font-family: sans-serif;
     margin: 30px;
 }
-form input{
+
+form input {
     width: 350px;
     height: 50px;
     margin: 5px 0;
     font-size: 1.2em;
-    padding:0 10px;
+    padding: 0 10px;
     background-color: #0f112e;
     border: none;
     box-shadow: 0 0 10px 2px #24274b;
-    color: honeydew;
+    color: white;
 }
-form input:focus{
-    outline:1px solid #2f3369;
+
+form input:focus {
+    outline: 1px solid #2f3369;
     transition: 1s;
 }
 
-.password_text{
+.password_text {
     width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.password_text #forgot{
+
+.password_text #forgot {
     color: #cc3268;
     text-decoration: none;
 }
-.password_text #forgot:hover{
+
+.password_text #forgot:hover {
     color: #fd6c9f;
     cursor: pointer;
     transition: 0.3s;
 }
 
-
-.sign_in{
+.sign_in {
     width: 350px;
     background-color: #F03B7A;
     border-radius: 5px;
@@ -95,17 +104,20 @@ form input:focus{
     border: none;
     color: white;
     font-size: 1.2em;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-.sign_in:hover{
+
+.sign_in:hover {
     color: #fd6c9f;
     background-color: #0f112e;
     cursor: pointer;
     transition: 0.3s;
 }
-footer{
+
+footer {
     position: absolute;
     bottom: 0;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,11 +125,13 @@ footer{
     width: 100vw;
     background-color: #26295c;
 }
-footer span{
+
+footer span {
     font-size: 1.5em;
     color: rgba(245, 245, 245, 0.719);
 }
-.sign_up{
+
+.sign_up {
     background-color: #F03B7A;
     border-radius: 5px;
     padding: 5px 15px;
@@ -125,13 +139,64 @@ footer span{
     border: none;
     color: white;
     font-size: 1.2em;
-    font-family:'Times New Roman', Times, serif;
-    
+    font-family: 'Times New Roman', Times, serif;
 }
-.sign_up:hover{
+
+.sign_up:hover {
     color: #fd6c9f;
     background-color: #0f112e;
     cursor: pointer;
     transition: 0.3s;
+}
 
+/* sin up css */
+
+input{
+    border-radius: 5px;
+}
+
+.signup_pagae {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(92, 92, 122, 0.356);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.sign_container {
+    background-color: indigo;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.signup_title {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.random {
+    color: #28beec;
+    text-decoration: none;
+}
+
+.random:hover {
+    color: #3588f5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
 }

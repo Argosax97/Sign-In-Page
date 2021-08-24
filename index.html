@@ -5,12 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
+
+    <div class="signup_pagae">
+        <div class="sign_container">
+            <div class="signup_title">
+                <h1>Sign in</h1>
+            </div>
+            <div class="forms">
+                <form class="fName">
+                    <span>First Name</span>
+                    <input type="text" placeholder="Enter your first name">
+                </form>
+                <form class="lName">
+                    <span>Last Name</span>
+                    <input type="text" placeholder="Enter your last name">
+                </form>
+                <form class="email_form">
+                    <span>Email Address</span>
+                    <input type="email" placeholder="Enter your email">
+                </form>
+                <form class="password_form">
+                    <div class="password_text">
+                        <span>Password</span>
+                        <span class="random">Get random password?</span>
+                    </div>
+                    <div>
+                        <input id="signup_password" type="password" placeholder="Enter your password">
+                        <i class="far fa-eye" id="togglePassword"></i>
+                    </div>
+                </form>
+            </div>
+            <button type="submit" class="sign_in"><span>Sign In</span></button>
+        </div>
+    </div>
 
     <main>
         <div class="title">
@@ -24,21 +58,23 @@
         <div class="forms">
             <form class="email_form">
                 <span>Email Address</span>
-                <input type="email" placeholder="Enter your email">
+                <input id="email" type="email" placeholder="Enter your email">
             </form>
             <form class="password_form">
                 <div class="password_text">
                     <span>Password</span>
                     <a href="#" id="forgot">Forgot password?</a>
                 </div>
-                <input type="password" placeholder="Enter your password">
+                <input id="password" type="password" placeholder="Enter your password">
             </form>
         </div>
-        <button class="sign_in"><span>Sign In</span></button>
+        <button type="submit" class="sign_in"><span>Sign In</span></button>
     </main>
     <footer>
         <div><span> Don't have account yet?</span> <button class="sign_up"> Sign Up</button></div>
     </footer>
+
+
 </body>
 
 </html>
